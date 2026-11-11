@@ -2,7 +2,7 @@
 
 Projeto de front-end de uma hamburgueria, desenvolvido com React. Atualmente inclui uma página inicial, um cardápio com filtro por categoria e telas de cadastro e login conectadas a uma API.
 
-> **Status: em desenvolvimento.** O projeto ainda não está completo; a interface e as funcionalidades podem mudar. O funcionamento do cardápio e da autenticação depende de uma API, que não está incluída neste repositório.
+> **Status: em desenvolvimento.** O projeto ainda não está completo; a interface e as funcionalidades podem mudar. O cardápio e a autenticação dependem da API do Dev Burguer, mantida no repositório separado de back-end.
 
 ## Funcionalidades presentes até agora
 
@@ -26,9 +26,9 @@ Projeto de front-end de uma hamburgueria, desenvolvido com React. Atualmente inc
 
 - Node.js 20.19 ou superior (ou 22.12 ou superior).
 - pnpm.
-- A API do Dev Burguer em execução na URL configurada em `VITE_API_URL`.
+- O repositório back-end do Dev Burguer em execução na URL configurada em `VITE_API_URL`.
 
-> A API não faz parte deste repositório. Configure o endereço no arquivo `.env` local.
+> Este repositório contém somente o front-end. Inicie o back-end separadamente e configure o endereço da API no arquivo `.env` local.
 
 ## Como executar
 
@@ -71,6 +71,6 @@ src/
 └── utils/        # Funções utilitárias
 ```
 
-## API utilizada
+## Integração com o back-end
 
-O front-end espera uma API compatível, incluindo rotas para categorias, produtos, cadastro de usuários e sessões de login. A URL base é definida pela variável `VITE_API_URL`.
+Este front-end se conecta à API do Dev Burguer, que está no repositório separado de back-end. A URL base é definida pela variável `VITE_API_URL`; a integração utiliza rotas para categorias, produtos, cadastro de usuários e sessões de login.
