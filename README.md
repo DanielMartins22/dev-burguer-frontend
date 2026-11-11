@@ -1,8 +1,10 @@
 # Dev Burguer — Front-end
 
-Aplicação web de uma hamburgueria, desenvolvida com React. O projeto reúne uma página inicial, um cardápio com filtro por categoria e telas de cadastro e login conectadas a uma API.
+Projeto de front-end de uma hamburgueria, desenvolvido com React. Atualmente inclui uma página inicial, um cardápio com filtro por categoria e telas de cadastro e login conectadas a uma API.
 
-## Funcionalidades
+> **Status: em desenvolvimento.** O projeto ainda não está completo; a interface e as funcionalidades podem mudar. O funcionamento do cardápio e da autenticação depende de uma API, que não está incluída neste repositório.
+
+## Funcionalidades presentes até agora
 
 - Página inicial com carrosséis de categorias e ofertas.
 - Cardápio com listagem de produtos e filtro por categoria.
