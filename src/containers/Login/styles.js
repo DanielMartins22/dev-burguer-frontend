@@ -1,5 +1,4 @@
 import { Link as ReactLink } from 'react-router-dom';
-
 import styled from 'styled-components';
 
 import Background from '../../assets/backgrounds/bg.svg';
