@@ -1,8 +1,8 @@
 import js from '@eslint/js';
-import importHelpers from 'eslint-plugin-import-helpers';
 import prettier from 'eslint-plugin-prettier';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 
 export default [
@@ -27,26 +27,27 @@ export default [
             },
         },
         plugins: {
-            'import-helpers': importHelpers,
             prettier,
             react,
+            'simple-import-sort': simpleImportSort,
         },
         rules: {
             'react/jsx-key': 'warn',
-            'import-helpers/order-imports': [
+            'simple-import-sort/imports': [
                 'warn',
                 {
-                    newlinesBetween: 'always',
                     groups: [
-                        '/^react/',
-                        'module',
-                        '/^@shared/',
-                        ['parent', 'sibling', 'index'],
+                        ['^react(?:$|/)'],
+                        ['^\\u0000', '^(?!@shared/)(?:@?\\w)'],
+                        ['^@shared/'],
+                        [
+                            '^\\.\\.(?!/?$)',
+                            '^\\.\\./?$',
+                            '^\\./(?=.*/)(?!/?$)',
+                            '^\\.(?!/?$)',
+                            '^\\./?$',
+                        ],
                     ],
-                    alphabetize: {
-                        order: 'asc',
-                        ignoreCase: true,
-                    },
                 },
             ],
             'no-unused-vars': 'warn',

@@ -60,9 +60,6 @@ importers:
       eslint-config-prettier:
         specifier: ^10.1.8
         version: 10.1.8(eslint@10.10.0)
-      eslint-plugin-import-helpers:
-        specifier: ^2.0.2
-        version: 2.0.2(eslint@10.10.0)
       eslint-plugin-prettier:
         specifier: ^5.5.6
         version: 5.5.6(eslint-config-prettier@10.1.8(eslint@10.10.0))(eslint@10.10.0)(prettier@3.9.8)
@@ -75,6 +72,9 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.5.6
         version: 0.5.7(eslint@10.10.0)
+      eslint-plugin-simple-import-sort:
+        specifier: ^14.0.0
+        version: 14.0.0(eslint@10.10.0)
       globals:
         specifier: ^17.12.0
         version: 17.12.0
@@ -700,11 +700,6 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-import-helpers@2.0.2:
-    resolution: {integrity: sha512-jH9m8UZhtpRyH5TIqXh1oDH/hqflUQWMOX30c3aujaCww39TcACtmmPUw74WXZNswSjsfRgMvdJgOYzzWc2oxQ==}
-    peerDependencies:
-      eslint: ^9.0.0 || ^10.0.0
-
   eslint-plugin-prettier@5.5.6:
     resolution: {integrity: sha512-ifetmTcxWfz+4qRW3pH/ujdTq2jQIj59AxJMIN26K5avYgU8dxycUETQonWiW+wPrYXA0j3Try0l1CnwVQtDqQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -735,6 +730,11 @@ packages:
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
+
+  eslint-plugin-simple-import-sort@14.0.0:
+    resolution: {integrity: sha512-NUJO0+XFCkk+o5EsAJruTgnfMEpeWrPWeJS15UVF60GgXmqz1BJ9/3hzlvG7lkL8Bubzos5cCLptThbFfPnSMQ==}
+    peerDependencies:
+      eslint: '>=5.0.0'
 
   eslint-scope@9.1.2:
     resolution: {integrity: sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==}
@@ -2304,10 +2304,6 @@ snapshots:
     dependencies:
       eslint: 10.10.0
 
-  eslint-plugin-import-helpers@2.0.2(eslint@10.10.0):
-    dependencies:
-      eslint: 10.10.0
-
   eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.10.0))(eslint@10.10.0)(prettier@3.9.8):
     dependencies:
       eslint: 10.10.0
@@ -2353,6 +2349,10 @@ snapshots:
       semver: 6.3.1
       string.prototype.matchall: 4.1.0
       string.prototype.repeat: 1.0.0
+
+  eslint-plugin-simple-import-sort@14.0.0(eslint@10.10.0):
+    dependencies:
+      eslint: 10.10.0
 
   eslint-scope@9.1.2:
     dependencies:
