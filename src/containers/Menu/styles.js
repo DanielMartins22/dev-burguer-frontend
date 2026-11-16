@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import styled from 'styled-components';
 
 import BannerHamburguer from '../../assets/backgrounds/banner-menu.svg';
@@ -41,6 +40,40 @@ export const BannerMenu = styled.div`
             display: block;
             color: #fff;
             font-size: 20px;
+        }
+    }
+
+    button {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 10;
+
+        background-color: rgba(151, 88, 166, 0.75);
+        color: #ffffff;
+        border: 1px solid rgba(151, 88, 166, 1);
+        box-shadow: 0 4px 12px rgba(151, 88, 166, 0.35);
+
+        border-radius: 20px;
+        padding: 8px 18px;
+        font-weight: 600;
+        cursor: pointer;
+        backdrop-filter: blur(4px);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: rgba(
+                151,
+                88,
+                166,
+                1
+            ); /* Fica 100% sólido no hover */
+            box-shadow: 0 6px 16px rgba(151, 88, 166, 0.5);
+            transform: translateY(-1px); /* Leve elevação */
+        }
+
+        &:active {
+            transform: translateY(0);
         }
     }
 `;
